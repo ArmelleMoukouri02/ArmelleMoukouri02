@@ -1,0 +1,15 @@
+<div class="competence">
+  <input checked type="checkbox" class="check">
+  <div class="details">
+    <div class="skill">
+      <h4>{{competence.titre}}</h4>
+      <span class="etoile">*</span>
+    </div>
+    <p class="lite_gray">{{competence.technologie}}</p>
+    <div class="switcher">
+      <div class="switcher_bar" [style]="{width: getNiveau()+'%', backgroundColor: getColor()}"></div>
+      <span class="switcher_circle" [style]="{right: 100-getNiveau()+'%',backgroundColor: getColor()}"></span>
+    </div>
+  </div>
+  <app-edit-competence></app-edit-competence>
+</div>

@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'projet3';
+  ShowProfession(index:number){
+    console.log('app-profession>'+index);
+  }
 }
